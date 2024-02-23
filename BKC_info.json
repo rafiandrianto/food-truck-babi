@@ -1,0 +1,77 @@
+{
+    "buildings": [
+    {
+        "coordinates":
+        {
+            "lat": 34.980922, 
+            "lng": 135.963584
+        },
+        "name": "prism_house"
+    },
+    {
+        "coordinates": 
+        {
+            "lat": 34.981085, 
+            "lng": 135.963740
+        },
+        "name": "exl1"   
+    },
+
+    {
+        "coordinates":
+        {
+            "lat": 34.981220, 
+            "lng": 135.962219
+        },
+        "name": "across_wing"
+    },
+
+    {   
+        "coordinates": 
+        {
+            "lat": 34.981281, 
+            "lng": 135.963093
+        },
+        "name": "central_arc"
+    },
+
+    {   
+        "coordinates": 
+        {
+            "lat": 34.979299, 
+            "lng": 135.963509
+        },
+        "name": "gym"
+    },
+
+    {   
+        "coordinates": 
+        {
+            "lat":34.982646, 
+            "lng": 135.964565
+        },
+        "name": "tricea"
+        
+    },
+
+    {
+        "coordinates": 
+        {
+            "lat": 34.980421, 
+            "lng": 135.962845
+        },
+        "name": "prism_house_hall"
+        
+    },
+
+    {
+        "coordinates": 
+        {
+            "lat": 34.982096, 
+            "lng": 135.964175
+        },
+        "name": "corse_station"
+    
+    }
+    ]
+}

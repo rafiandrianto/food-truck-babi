@@ -1,0 +1,592 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/*------- Intro ----------*/
+#Intro{
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(0deg, rgba(0,0,0,1), transparent);
+    background-size: cover;
+    background-position: center;
+    padding: 0 8%;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5px 0;
+    justify-content: space-between;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav-btn{
+    padding: 9px 25px;
+    background-color: rgba(0,0,0,.5);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.5s ease 0s;
+}
+
+nav-btn:hover{
+    background-color: #DC5F00;
+}
+
+nav ul li a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+    font-weight: 600;
+}
+
+.logo{
+    width: 300px;
+}
+
+.text-box{
+    color: #ffffff;
+    position: absolute;
+    bottom: 8%;
+}
+
+.text-box h1{
+    font-size: 45px;
+    line-height: 60px;
+    color: transparent;
+    -webkit-text-stroke: 1px #ffffff;
+    background: url(images/bkg.png);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 20s linear infinite;
+}
+@keyframes back{
+    100%{
+        background-position: 2000px 0;
+    }
+}
+
+.text-box h3{
+    font-size: 20px;
+    margin-bottom: 30%;
+    font-weight: 600;
+}
+
+.bkg-video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+@media (min-aspect-ratio: 16/9){
+    .bkg-video{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9){
+    .bkg-video{
+        width: auto;
+        height: 100%;
+    }
+}
+/*-----------------------------*/
+
+/*---------- Recomendation ------------*/
+.container{
+    padding: 5px 10%;
+}
+#about{
+    display: flex;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    background: #000000;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col-1{
+    flex-basis: 35%;
+}
+
+.about-col-1 img{
+    width: 100%;
+    border-radius: 15px;
+}
+
+.about-col-2{
+    flex-basis: 60%;
+}
+.about-col-2 p{
+    color: #ffffff;
+}
+
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+
+.tab-links{
+    margin-right: 50px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #DC5F00;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after{
+    width: 50%;
+}
+
+.tab-contents{
+    display: none;
+}
+
+.tab-contents.active-tab{
+    display: block;
+}
+
+/* Calendar */
+.container-calendar {
+    width: 65%;
+    height: 55vh;
+    /* background-color: #12121f; */
+    color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50%;
+}
+
+.calendar{
+    width: 26rem;
+    height: 32rem;
+    background-color: #222227;
+    box-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 0.4);
+}
+
+.month {
+    width: 100%;
+    height: 5rem;
+    background-color: #DC5F00;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    text-align: center;
+    text-shadow: 0 .3rem .5rem rgba(0, 0, 0, 0.5);
+}
+
+.month i {
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+
+.month h1{
+    font-size: 1.3rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    margin-bottom: 0.2rem;
+}
+
+.month p{
+    font-size: 1.2rem;
+}
+
+.weekdays {
+    width: 100%;
+    height: 5rem;
+    padding: 0 0.4rem;
+    display: flex;
+    align-items: center;
+}
+
+.weekdays div{
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+    width: calc(44.2rem/7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+}
+
+.days{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0.2rem;
+}
+
+.days div{
+    font-size: 1.4rem;
+    margin: 0.3rem;
+    width: calc(21.2rem/7);
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+    transition: background-color 0.2s;
+}
+
+.days div:hover:not(.today){
+    background-color: #262626;
+    border: 0.2rem solid #777;
+    cursor: pointer;
+}
+
+.prev-date,
+.next-date{
+    opacity: 0.5;
+}
+
+.today{
+    background-color: #DC5F00;
+}
+
+
+/*animation*/
+.card{
+    position: relative;
+    width: 600px;
+    height: 350px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.circle1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.card .circle1::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #DC5F00;
+    clip-path: circle(120px at center);
+    transition: 0.5s;
+}
+
+.card:hover .circle1:before{
+    background: #597f70;
+    clip-path: circle(400px at center);
+}
+
+.circle2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.card .circle2::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #DC5F00;
+    clip-path: circle(120px at center);
+    transition: 0.5s;
+}
+
+.card:hover .circle2:before{
+    background: #b3ad8c;
+    clip-path: circle(400px at center);
+}
+
+.circle3{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.card .circle3::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #DC5F00;
+    clip-path: circle(120px at center);
+    transition: 0.5s;
+}
+
+.card:hover .circle3:before{
+    background: #e9aa5f;
+    clip-path: circle(400px at center);
+}
+
+.card img{
+    position: absolute;
+    width: 60%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.card:hover img{
+    left: 85%;
+    width: 70%;
+}
+
+.card .card-content{
+    position: relative;
+    width: 50%;
+    left: 20%;
+    padding: 20px 20px 20px 40px;
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.card:hover .card-content{
+    left: 0;
+    opacity: 1;
+    visibility: visible;
+}
+
+.card-content h2{
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    line-height: 1em;
+}
+
+.card-content p{
+    color: #ffffff;
+}
+
+/*----------------------------*/
+
+/*------------- Category ----------*/
+#category{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #000000;
+    padding-bottom: 5%;
+}
+.stall_header{
+    flex: none;
+    display: flex;
+    position: relative;
+    margin-left: 10px;
+    color: white;
+}
+.stall_header h2{
+    font-size: 36px;
+    font-weight: 600;
+    margin: 0;
+    color: white;
+}
+.stall_carousel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    white-space: nowrap;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+}
+#category .stall_carousel > * {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    scroll-snap-align: start;
+    padding-left: 15px;
+}
+/*Food Stalls Buttons*/
+#stall_indicator{
+    position: absolute;
+    top: 8px;
+    right: 5px;
+    justify-content: space-between;
+}
+#stall_indicator button{
+    margin-right: 10px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+
+div.truck .stall_label{
+    position: relative;
+}
+
+div.truck button.stall{
+    display: flex;
+    flex: 0 1 auto;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    box-sizing: border-box;
+    height: 100px;
+    width: 40vw;
+    border-radius: 15px;
+}
+div.scroller {
+    display: flex;
+    scroll-snap-type: x mandatory;
+    overflow-x: scroll;
+    padding: 10px;
+    margin-top: 15px;
+}
+
+div.truck .stall{
+    display: flex;
+    flex: 0 1 auto;
+    justify-content: space-between;
+    position: relative;
+    cursor: pointer;
+    padding: 15px;
+}
+
+div.truck button {
+    display: flex;
+    justify-content: space-between;
+}
+
+div.truck button .stall_label, 
+div.truck button .stall {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* #Wookie-ZeZe, #LR-coffee,#Olympia-Restaurant{
+    visibility: hidden;
+} */
+
+div.truck {
+    display: none;
+    justify-content: space-between;
+    flex: 0 1 auto;
+    flex-wrap: wrap;
+    padding-left: 10px;
+    width: 255px;
+}
+
+.stall_carousel {
+    display: flex;
+}
+
+.stall_list {
+    display: flex;
+}
+
+div.truck img{
+    display: flex;
+    flex: 1 1 auto;
+    height: 80px;
+    width: 80px;
+}
+
+/*---------------------------------*/
+
+/*---------- Maps -----------*/
+.frame {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    background: #000000;
+}
+
+#map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 500px;
+}
+/*-----------------*/
+
+/*------------- Footer -------------*/
+#footer{
+    background: #000000;
+}
+
+.footer-text{
+    margin-top: 10%;
+}
+
+.footer-text p{
+    text-align: center;
+    color: #ffffff;
+}
+
+.footer-text p{
+    text-align: justify;
+    text-align-last: center;
+    font-size: 15px;
+}
+
+/*--------------------------*/

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script type="module" src="script.js"></script>
+    <title>Babi</title>
+    <link rel="icon" href="images/babigif.gif" type="images/babigif">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
+</head>
+<body>
+    <!-- Introduction (Rafi) -->
+    <div id="Intro">
+        <video autoplay loop muted playsinline class="bkg-video">
+            <source src="video/IMG_1527.MOV" type="video/mp4">
+        </video>
+
+        <nav>
+            <img src="images/babigif2.gif" class="logo">
+            <ul>
+                <li><a href="#map"><nav-btn>Locations</nav-btn></a></li>
+                <li><a href="#category"><nav-btn>Foods</nav-btn></a></li>
+                <li><a href="#about"><nav-btn>Date</nav-btn></a></li>
+            </ul>
+        </nav>
+        <div class="text-box">
+            <h1>LOOKING FOR SOMETHING TO EAT?</h1>
+            <h3>BABI CAN HELP YOU FIND WHAT YOU WANT TO EAT!</h3>
+        </div>
+    </div>
+
+    <!-- Recommendation (Rafi) + Calendar(Carlos) -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <div class="container-calendar">
+                        <div class="calendar">
+                            <div class="month">
+                                <i class="fas fa-angle-left prev"></i>
+                                <div class="date">
+                                    <h1></h1>
+                                    <p></p>
+                                </div>
+                                <i class="fas fa-angle-right next"></i>
+                            </div>
+                            <div class="weekdays">
+                                <div>Sun</div>
+                                <div>Mon</div>
+                                <div>Tue</div>
+                                <div>Wed</div>
+                                <div>Thu</div>
+                                <div>Fri</div>
+                                <div>Sat</div>
+                            </div>
+                            <div class="days"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">RECOMMENDATION!</h1>
+                    <p>Many food trucks come to BKC every day.  There are 25 shops in total!!  You can eat freshly made foods at any of the food shops! Which food truck would you choose today?                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('top1')">Top #1</p>
+                        <p class="tab-links" onclick="opentab('top2')">Top #2</p>
+                        <p class="tab-links" onclick="opentab('top3')">Top #3</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="top1">
+                        <div class="card">
+                            <div class="circle1"></div>
+                            <div class="card-content">
+                                <h2>Kebab MOTO-3</h2>
+                                <p>There are many kebab shops here.  The delicious hot meat and fresh vegetables are great with both wraps and rice!</p>
+                            </div>
+                            <img src="images/foodtruck/Kyotos_Kebab_store_MOTO-3.PNG">
+                        </div>
+                    </div>
+                    <div class="tab-contents" id="top2">
+                        <div class="card">
+                            <div class="circle2"></div>
+                            <div class="card-content">
+                                <h2>Pizza</h2>
+                                <p>If you eat pizza while looking at the beautiful campus scenery, you'll feel like you're in Europe!  There are various type of pizza! So why not try it all??</p>
+                            </div>
+                            <img src="images/foodtruck/salice.PNG">
+                        </div>
+                    </div>
+                    <div class="tab-contents" id="top3">
+                        <div class="card">
+                            <div class="circle3"></div>
+                            <div class="card-content">
+                                <h2>Minasen</h2>
+                                <p> People who eat Minasen will become addicted!  You can eat the authentic taste of Osaka at BKC!  The menu is abundant and you can take a break with you favorite one from studying!</p>
+                            </div>
+                            <img src="images/foodtruck/Minasen.PNG">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <!-- Category (Michael + Tim) -->
+    <div id="category">
+        <div class="stall_header"><h2>Explore Today's Stalls</h2>
+            </div>
+            <div class="stall_carousel">
+                <div class="stall_list">
+                    <div class="scroller" id="clickable_trucks">
+                        <div class="truck" id="Wookie-ZeZe">
+                            <button class="stall Wookie-ZeZe" type="button" 
+                            style="padding-right: 0px;"> 
+                                <p class="stall_label">Wookie ZeZe</p>
+                                <div class="stall"><img src="images/foodtruck/Wookie_ZeZe.PNG" alt="Wookie-ZeZe" height="100%"></div>
+                            </button>
+                        </div>
+                        <div class="truck" id="LR-coffee">
+                            <button class="stall LR-coffee" id="LR-coffee" type="button" style="padding-right: 0px;"> 
+                                <p class="stall_label">LR Coffee</p>
+                                <div class="stall"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAIQu16hfRDt1QrN8rSzx_DH7velhKdBd05uVRzilHeA&s" alt="LR-coffee" height="100%"></div>
+                            </button>
+                        </div>
+                        <div class="truck" id="Olympia-Restaurant">
+                            <button class="stall Olympia-Restaurant" id="Olympia-Restaurant" type="button" style="padding-right: 0px;"> 
+                                <p class="stall_label">Olympia Restaurant</p>
+                                <div class="stall"><img src="images/foodtruck/Olympia_Restaurant.PNG" alt="Olympia-Restaurant" height="100%"></div>
+                            </button>
+                        </div>
+                        <div class="truck" id="Kitchen-car-Ado">
+                            <button class="stall Kitchen-car-Ado" type="button" style="padding-right: 0px;"> 
+                                <p class="stall_label">Kitchen car Ado</p>
+                                <div class="stall"><img src="images/foodtruck/Kitchen-car-Ado.PNG" alt="Kitchen-car-Ado" height="100%"></div>
+                            </button>
+                        </div>
+                        <div class="truck" id="Kouga-Taiyaki">
+                            <button class="stall Kouga-Taiyaki" type="button" style="padding-right: 0px;"> 
+                                <p class="stall_label">Kouga Taiyaki</p>
+                                <div class="stall"><img src="images/foodtruck/Kouga-Taiyaki.PNG" alt="Kouga-Taiyaki" height="100%"></div>
+                            </button>
+                        </div>
+                            <div class="truck" id="Japanese-fast-food">
+                                <button class="stall Japanese-fast-food" type="button" style="padding-right: 0px;"> 
+                                    <p class="stall_label">Japanese Fast Food</p>
+                                    <div class="stall"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAIQu16hfRDt1QrN8rSzx_DH7velhKdBd05uVRzilHeA&s" alt="Japanese-fast-food" height="100%"></div>
+                                </button>
+                            </div>
+                            <div class="truck" id="Saki-Tako">
+                                <button class="stall Saki-Tako" type="button" style="padding-right: 0px;"> 
+                                    <p class="stall_label">Saki Tako</p>
+                                    <div class="stall"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAIQu16hfRDt1QrN8rSzx_DH7velhKdBd05uVRzilHeA&s" alt="Saki-Tako" height="100%"></div>
+                                </button>
+                            </div>
+                            <div class="truck" id="Salice">
+                                <button class="stall Salice" type="button" style="padding-right: 0px;"> 
+                                    <p class="stall_label">Salice</p>
+                                    <div class="stall"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAIQu16hfRDt1QrN8rSzx_DH7velhKdBd05uVRzilHeA&s" alt="Salice" height="100%"></div>
+                                </button>
+                            </div>
+                            <div class="truck" id="Granpa's-Gyoua">
+                                <button class="stall Granpa's-Gyouza" type="button" style="padding-right: 0px;"> 
+                                    <p class="stall_label">Granpa's Gyouza</p>
+                                    <div class="stall"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAIQu16hfRDt1QrN8rSzx_DH7velhKdBd05uVRzilHeA&s" alt="Granpa's-Gyouza" height="100%"></div>
+                                </button>
+                            </div>
+                            <div class="truck" id="Siz">
+                                <button class="stall Siz" type="button" style="padding-right: 0px;"> 
+                                    <p class="stall_label">Siz</p>
+                                    <div class="stall"><img src="images/foodtruck/Siz.PNG" alt="Siz" height="100%"></div>
+                                </button>
+                            </div>
+                            <div class="truck" id="Daily-soups">
+                                <button class="stall Daily-soups" type="button" style="padding-right: 0px;"> 
+                                    <p class="stall_label">Daily Soups</p>
+                                    <div class="stall"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAIQu16hfRDt1QrN8rSzx_DH7velhKdBd05uVRzilHeA&s" alt="Daily-soups" height="100%"></div>
+                                </button>
+                            </div>
+                            <div class="truck" id="Iron-plate-Teppei">
+                                <button class="stall Iron-plate-Teppei" type="button" style="padding-right: 0px;"> 
+                                    <p class="stall_label">Iron Plate Teppei</p>
+                                    <div class="stall"><img src="images/foodtruck/ironplate_cooking_teppei.PNG" alt="Iron-plate-Teppei" height="100%"></div>
+                                </button>
+                            </div>
+                            <div class="truck" id="Daikichi-kitchen">
+                                <button class="stall Daikichi-kitchen" type="button" style="padding-right: 0px;"> 
+                                    <p class="stall_label">Daikichi Kitchen</p>
+                                    <div class="stall"><img src="images/foodtruck/Daikichi_Kitchen.PNG" alt="Daikichi-kitchen" height="100%"></div>
+                                </button>
+                            </div>
+                            <div class="truck" id="Tsubaki-products=factory">
+                                <button class="stall Tsubaki-products-factory" type="button" style="padding-right: 0px;"> 
+                                    <p class="stall_label">Tsubaki Products<br></br>factory</p>
+                                    <div class="stall"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAIQu16hfRDt1QrN8rSzx_DH7velhKdBd05uVRzilHeA&s" alt="Tsubaki-products-factory" height="100%"></div>
+                                </button>
+                            </div>
+                            <div class="truck" id="Nakatsu-fried-chicken">
+                                <button class="stall Nakatsu-fried-chicken" type="button" style="padding-right: 0px;"> 
+                                    <p class="stall_label">Nakatsu Fried Chicken</p>
+                                    <div class="stall"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAIQu16hfRDt1QrN8rSzx_DH7velhKdBd05uVRzilHeA&s" alt="Nakatsu-fried-chicken" height="100%"></div>
+                                </button>
+                            </div>
+                            <div class="truck" id="NINA-spice">
+                                <button class="stall NINA-spice" type="button" style="padding-right: 0px;"> 
+                                    <p class="stall_label">NINA Spice</p>
+                                    <div class="stall"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAIQu16hfRDt1QrN8rSzx_DH7velhKdBd05uVRzilHeA&s" alt="NINA-spice" height="100%"></div>
+                                </button>
+                            </div>
+                            <div class="truck" id="Barong">
+                                <button class="stall Barong" type="button" style="padding-right: 0px;"> 
+                                    <p class="stall_label">Barong</p>
+                                    <div class="stall"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAIQu16hfRDt1QrN8rSzx_DH7velhKdBd05uVRzilHeA&s" alt="Barong" height="100%"></div>
+                                </button>
+                            </div>
+                            <div class="truck" id="B2-Tacos">
+                                <button class="stall B2-Tacos" type="button" style="padding-right: 0px;"> 
+                                    <p class="stall_label">B2 Tacos</p>
+                                    <div class="stall"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAIQu16hfRDt1QrN8rSzx_DH7velhKdBd05uVRzilHeA&s" alt="B2-Tacos" height="100%"></div>
+                                </button>
+                            </div>
+                            <div class="truck" id="Minasen">
+                                <button class="stall Minasen" type="button" style="padding-right: 0px;"> 
+                                    <p class="stall_label">Minasen</p>
+                                    <div class="stall"><img src="images/foodtruck/Minasen.PNG" alt="Minasen" height="100%"></div>
+                                </button>
+                            </div>
+                            <div class="truck" id="Monkazi">
+                                <button class="stall Monkazi" type="button" style="padding-right: 0px;"> 
+                                    <p class="stall_label">Monkazi</p>
+                                    <div class="stall"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAIQu16hfRDt1QrN8rSzx_DH7velhKdBd05uVRzilHeA&s" alt="Monkazi" height="100%"></div>
+                                </button>
+                            </div>
+                        <div class="truck" id="Monkichi">
+                            <button class="stall Monkichi" type="button" style="padding-right: 0px;"> 
+                                <p class="stall_label">Monkichi</p>
+                                <div class="stall"><img src="images/foodtruck/Monkichi.PNG" alt="Monkichi" height="100%"></div>
+                            </button>
+                        </div>
+                        <div class="truck" id="Daigo's-soba">
+                            <button class="stall Daigo's-soba" type="button" style="padding-right: 0px;"> 
+                                <p class="stall_label">Daigo's Soba</p>
+                                <div class="stall"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAIQu16hfRDt1QrN8rSzx_DH7velhKdBd05uVRzilHeA&s" alt="Daigo's-soba" height="100%"></div>
+                            </button>
+                        </div>
+                        <div class="truck" id="Kyoto-Kebab-Moto3">
+                            <button class="stall Kyoto-Kebab-Moto3" type="button" style="padding-right: 0px;"> 
+                                <p class="stall_label">Kyoto's Kebab<br></br> store MOTO-3</p>
+                                <div class="stall"><img src="images/foodtruck/Kyotos_Kebab_store_MOTO-3.PNG" alt="Kyoto's-Kebab-store-MOTO-3" height="100%"></div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    <!-- Map (Tim) -->
+    <div class="frame">
+        <div id="map"></div>
+            <script
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcQMDjEPrA9cCZAHQfPW1n47H4r5Bx4EI&callback=initMap&v=weekly"
+            defer
+            ></script>
+    </div>
+
+    <!-- Footer (Rafi) -->
+    <div id="footer">
+        <div class="container">
+            <div class="footer-text">
+                <h1></h1>
+                <p>This project is created by Team B.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

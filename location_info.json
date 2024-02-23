@@ -1,0 +1,153 @@
+{
+    "November":{
+        "9": 
+            [
+                {
+                    "period": "D",
+                    "location": "prism_house",
+                    "truck": "Olympia-Restaurant"
+                },
+                {
+                    "period": "E",
+                    "location": "exl1",
+                    "truck": "Japanese-fast-food"
+                },
+                {
+                    "period": "G",
+                    "location": "across_wing",
+                    "truck": "Monkichi"
+                },
+                {
+                    "period": "I",
+                    "location": "central_arc",
+                    "truck": "Wookie-ZeZe"
+                },
+                {
+                    "period": "J",
+                    "location": "bkc_gym",
+                    "truck": "Siz"
+                },
+                {
+                    "period": "K",
+                    "location": "tricea",
+                    "truck": "Kitchen-car-Ado"
+                },
+                {
+                    "period": "L",
+                    "location": "prism_house_manabi",
+                    "truck": "Granpa's-Gyouza"
+                },
+                {
+                    "period": "M",
+                    "location": "prism_house_manabi",
+                    "truck": "Kouga-Taiyaki"
+                },
+                {   
+                    "period": "N",
+                    "location": "prism_house_hall",
+                    "truck": "Daikichi-kitchen"
+                },
+                {   
+                    "period": "O",
+                    "location": "core_station",
+                    "truck": "Kyoto-Kebab-Moto3"
+                }
+        ],
+    "10": 
+        [   
+            {
+                "period": "D",
+                "location": "prism_house",
+                "truck": "Barong"
+            },
+            {
+                "period": "E",
+                "location": "exl1",
+                "truck": "Kyoto-Kebab-Moto3"
+            },
+            {
+                "period": "F",
+                "location": "across_wing",
+                "truck": "Monkichi"
+            },
+            {
+                "period": "G",
+                "location": "across_wing",
+                "truck": "Wookie-ZeZe"
+            },
+            {
+                "period": "I",
+                "location": "central_arc",
+                "truck": "B2-Tacos"
+            },
+            {
+                "period": "J",
+                "location": "bkc_gym",
+                "truck": "Lo-Splendore"
+            },
+            {
+                "period": "K",
+                "location": "tricea",
+                "truck": "Salice"
+            },
+            {
+                "period": "L",
+                "location": "prism_house_manabi",
+                "truck": "Runmon-cafe"
+            },
+            {
+                "period": "M",
+                "location": "prism_house_manabi",
+                "truck": "Monkazi"
+            },
+            {   
+                "period": "N",
+                "location": "prism_house_hall",
+                "truck": "LR-coffee"
+            },
+            {   
+                "period": "O",
+                "location": "core_station",
+                "truck": "Minasen"
+            }
+        ],
+    "11": 
+        [   
+            {
+                "period": "D",
+                "location": "prism_house",
+                "truck": "Minasen"
+            },
+            {
+                "period": "E",
+                "location": "exl1",
+                "truck": "Kouga-Taiyaki"
+            },
+            {
+                "period": "F",
+                "location": "across_wing",
+                "truck": "Iron-plate-Teppei"
+            },
+            {
+                "period": "G",
+                "location": "across_wing",
+                "truck": "Lo-Splendore"
+            },
+            {
+                "period": "I",
+                "location": "central_arc",
+                "truck": "B2-Tacos"
+            },
+            {
+                "period": "L",
+                "location": "prism_house_manabi",
+                "truck": "Daigo's-soba"
+            },
+            {   
+                "period": "O",
+                "location": "core_station",
+                "truck": "Monkazi"
+            }
+        ]
+    }
+}

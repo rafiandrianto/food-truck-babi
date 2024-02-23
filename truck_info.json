@@ -1,0 +1,110 @@
+{   "trucks":[
+        {
+            "name": "Wookie-ZeZe",
+            "menu": ["grilled ramen", "various rice bowls"] 
+        },
+        
+        {
+            "name": "LR-coffee",
+            "menu": ["spicy curry", "shrimp avocado sandwich",
+            "coffee"] 
+        },
+        {
+            "name": "Olympia-Restaurant",
+            "menu": ["lunch box", "chicken over rice"] 
+        },
+        {
+            "name": "Kitchen-car-Ado",
+            "menu": ["Fried chicken lunch box", "rice bowls"] 
+        },
+        {
+            "name": "Kouga-Taiyaki",
+            "menu": ["cake with custard cream"] 
+        },
+        {
+            "name": "Japanese-fast-food",
+            "menu": ["fried chicken", "rice bowls with fried chicken"] 
+        },
+        {
+            "name": "Saki-Tako",
+            "menu":  ["Fried octopus (Kyoto style)", 
+            "Modern rice bowl with fried octopus"]
+        },
+        {
+            "name": "Salice",
+            "menu": ["Various types of pizza"]
+        },
+        {
+            "name": "Granpa's-Gyouza",
+            "menu": ["gyouza", "rice bowls", "lunch box",
+                    "potato"]
+        },
+        {
+            "name": "Siz",
+            "menu": ["cuban sandwich", "curry"]
+        },
+        {
+            "name": "Daily-soups",
+            "menu": ["soups", "rice balls"]
+        },
+        {
+            "name": "Iron-plate-Teppei",
+            "menu": ["teppeiyaki (pork, eggs, yam)"]
+        },
+        {
+            "name": "Daikichi-kitchen",
+            "menu": ["fried chicken plate", "rice bowls with pork"]
+        },
+        {
+            "name": "Tsubaki-products-factory",
+            "menu": ["fried pizza", "potato chips"]
+        },
+        {
+            "name": "Nakatsu-fried-chicken",
+            "menu": ["fried chicken", "rice bowls with fried chicken"]
+        },
+        {
+            "name": "NINA-spice",
+            "menu": ["tandoori chicken rice", "ginger pork rice"]
+        },
+        {
+            "name": "Barong",
+            "menu": ["fried mashed potatoes"]
+        },
+        {
+            "name": "B2-Tacos",
+            "menu": ["tacos", "taco rice"]
+        },
+        {
+            "name": "Minasen",
+            "menu": ["grilled squid", "grilled pork"]
+        },
+        {
+            "name": "Monkazi",
+            "menu": ["kebab rice", "chicken kebab"]
+        },
+        {
+            "name": "Monkichi",
+            "menu": ["Loco moco burger", "rice bowls"]
+        },
+        {
+            "name": "Daigo's-soba",
+            "menu": ["various kinds of soba", "Bou Inari sushi"]
+        },
+        {
+            "name": "Kyoto-Kebab-Moto3",
+            "menu": ["kebab sandwich", "chicken kebab lunchbox"]
+        },
+        {
+            "name": "Lo-Splendore",
+            "menu": ["pasta", "muffins"]
+        },
+        {
+            "name": "Runmon-cafe",
+            "menu": ["parfaits", "ice creams"]
+        }
+
+],
+    "truck_number": 25
+}
+
